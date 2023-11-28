@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <nav id="links">
+        <ul class="ul-1">
+        <li style="float: right;"><a href="about.html">About-Me</a></li>
+        <li style="float: right;"><a href="songs.html">Songs</a></li>
+        <li style="float: right;"><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+<div class="basket-3">
+    <h2 class="contact">Contact Us:</h2>
+    <h5 class="touch">If you would like to pay your tributes or share your memories you have of the legend, please don`t be shy to get in touch.</h5>
+   <ul class="e-t">
+    <li><a  href = "mailto: ayohanes@hotmail.co.uk">Send Email</a></li>
+    </ul>
+</div>
+
+<div class="basket-4">
+    <h2 class="join">Join Us:</h2>
+    <h4 class="subscribe">If you would like to be a member of our music tribe and receive monthly newslaters, please subscribe.</h4>
+
+    <form id="my-form" class="form" action="submitted.html" method="GET">
+        <label for="fname">First Name:</label>
+        <input id="fname" name="fname" type="text" required>
+
+        <label for="lname">Last Name:</label>
+        <input id="lname" name="lname" type="text" required>
+        <br>
+
+        <label for="email">Email:</label>
+        &nbsp; &nbsp; &nbsp; &nbsp; <input id="email" name="email" type="email" required>
+        
+        &nbsp; &nbsp; <label for="tel">Tel:</label>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input id="tel" name="tel" type="number" minlength="8" maxlength="12">
+        <br>
+        
+        <label>Instruments You Play:</label><br>
+        <label for="instrument-1">Guitar</label>
+        <input id="instrument-1" name="instrument-1" type="checkbox" value="guitar">
+        <label for="instrument-2">Keyboard</label>
+        <input id="instrument-2" name="instrument-2" type="checkbox" value="keyboard">
+        <label for="instrument-3">Violin</label>
+        <input id="instrument-3" name="instrument-3" type="checkbox" value="violin">
+        <label for="instrument-4">Harp</label>
+        <input id="instrument-4" name="instrument-4" type="checkbox" value="violin">
+        <label for="instrument-5">Saxfone</label>
+        <input id="instrument-5" name="instrument-5" type="checkbox" value="saxfone">
+        <label for="instrument-6">Drum</label>
+        <input id="instrument-6" name="instrument-6" type="checkbox" value="drum">
+        <label for="instrument-0">Other:</label>
+        <input id="instrument-0" name="instrument-0" type="checkbox" value="other">
+        <br>
+        <div>
+            Gender:
+            <div>
+                <label for="male">Male</label>
+        <input id="male" name="gender" type="radio" value="male" required>
+        <label for="female">Female</label>
+        <input id="female" name="gender" type="radio" value="female" required>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button class="btn" type="submit" target="_self" name="submit">Subscribe</button>
+    </form>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<img id="yb-9" src="yb-9.JPG" width="300" height="350" alt="Immortal">
+
+
+<script>
+    const myForm = document.getElementById('my-form');
+    myForm.addEventListener('submit', (e) => {
+        console.log("Form has been Submitted!");
+    })
+    
+</script>
+
+</body>
+</html>
